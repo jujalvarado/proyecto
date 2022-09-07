@@ -1,0 +1,35 @@
+{% extends './base.html' %}
+
+{% block title %} BAZAR CARMITA-COMPRA MUCHO, GASTA POCO{% endblock %}
+
+{% block body %}
+
+{% load static %}
+
+    <section id="quienessomos" class="quienessomos">
+       
+        <h1> Quienes somos </h1>
+        <img class="img-fluid imagen-logo" src="{% static 'img/logo-color.png' %}">
+        <p> “Bazar Carmita” se encuentra ubicada en Guayaquil y está 
+            dedicada a la venta de útiles escolares, artículos de oficina y de 
+            más.<br>Contamos con un local que viene funcionando hace más de 10
+            años obteniendo la fidelización de nuestros clientes por el servicio y la 
+            calidad de nuestros productos</p> 
+    </section>
+    <section id="mision" class="mision">
+    
+        <h1> Misión </h1>
+        <img  class="img-fluid imagen-mision" src="{% static 'img/mision.png' %}">
+        <p> Ofrecer productos de excelente calidad a nuestra clientela,<br>
+            mediante un buen servicio, el mejor precio y nuestro buen trato</p>
+     
+    </section>
+    <section id="vision" class="vision">
+
+        <h1> Visión </h1>
+        <img  class=" img-fluid imagen-vision" src="{% static 'img/vision.png' %}">
+        <p>Ser la primera opcion de nuestros clientes, al decidir comprar productos<br>
+        como los que ofrecemos, creando relaciones duraderas basadas en la confianza </p>
+        
+    </section>
+{% endblock%}

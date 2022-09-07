@@ -1,0 +1,92 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 20px;
+}
+
+.header{
+    border-bottom:4px solid #fdb347 ;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    position:fixed;
+    width:100%;
+    top: 0;
+}
+
+
+
+body{
+    width:100%;
+    height:100vh;
+    margin:0 auto;
+}
+
+
+.nav-item{
+    max-width: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+#logo{
+    width: 100%;
+    height: 80px;;
+    object-fit: cover;
+    display:flex;
+    margin:10px;
+}
+
+
+.extender{
+    margin-top: 100px;
+    width: 100%;
+}
+
+section > h1,p{
+    width:70%;
+    margin: auto auto;
+    padding:auto auto;
+}
+
+.imagen-logo{
+    max-width:500px;
+    max-height:300px;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+.imagen-vision , .imagen-mision{
+    width: 230px;
+    height: 225px;
+    margin-top:0px;
+}
+
+.quienessomos{
+    text-align: center;
+    margin:auto;
+    padding:10px 0;
+    background-color: #054d67;
+}
+
+.mision{
+    text-align: center;
+    margin:0;
+    padding:10px 0;
+    background-color: #aa9a6d;
+    border-top: 4px solid #0a0a23;
+    border-bottom: 4px solid #0a0a23;
+}
+.vision{
+    text-align: center;
+    margin:0;
+    padding:10px 0;
+    background-color: #0985B3;
+}
