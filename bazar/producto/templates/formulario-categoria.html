@@ -1,0 +1,27 @@
+{% extends './base.html' %}
+
+{% load static %}
+
+{% block title %} Ingreso Categoria Producto {% endblock %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/estilos-formulario.css' %}">
+{% endblock %}
+
+{% block body %}
+
+{% load static %}
+
+<form action="registrar_categoria_producto" method="POST">
+    {% csrf_token %}
+    <h1>Ingreso de Categoria de Producto</h1>
+    <fieldset>
+    <label for="codigo">Codigo: <input id="codigo" name="codigo" type="text" required /></label>
+      <label for="nombre">Nombre: <input id="nombre" name="nombre" type="text" required /></label>
+    </fieldset>
+    <input type="submit" value="Ingresar" />
+  </form>
+
+
+
+{% endblock%}

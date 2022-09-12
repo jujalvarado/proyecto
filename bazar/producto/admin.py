@@ -9,5 +9,6 @@ admin.site.register(Proveedor)
 admin.site.register(Marca)
 admin.site.register(Proveedor_marca)
 admin.site.register(Producto_imagen)
+admin.site.register(Producto)
 
 

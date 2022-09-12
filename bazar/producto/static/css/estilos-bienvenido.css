@@ -1,0 +1,56 @@
+
+section > p{
+    width:70%;
+    margin: auto auto;
+    padding:auto auto;
+    color:#fff;
+    font-size:2rem;
+}
+
+section > h1{
+    width:70%;
+    margin: auto auto;
+    padding:auto auto;
+    color:#fff;
+    font-size:3rem;
+    font-weight: bold;
+}
+
+.imagen-logo{
+    width:100%;
+    max-width:400px;
+    height:auto;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+.imagen-vision , .imagen-mision{
+    width: 230px;
+    height: 225px;
+    margin-top:0px;
+}
+
+.quienessomos{
+    text-align: center;
+    margin:auto;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color: #054d67;
+}
+
+.mision{
+    text-align: center;
+    margin:0;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color: #aa9a6d;
+    border-top: 4px solid #0a0a23;
+    border-bottom: 4px solid #0a0a23;
+}
+.vision{
+    text-align: center;
+    margin:0;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color: #0985B3;
+}
