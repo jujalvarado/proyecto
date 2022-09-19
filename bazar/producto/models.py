@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Categoria_producto(models.Model):
-    codigo= models.CharField(primary_key=True, max_length=6)
+    codigo= models.CharField(max_length=6)
     nombre = models.CharField(max_length=50)
 
     def __str__(self):
@@ -42,7 +42,7 @@ class Proveedor_marca(models.Model):
     estado = models.SmallIntegerField(max_length=1, default=1)  
 
     def __str__(self):
-        texto = "{0} ({1})"
+        texto = "{0} - {1}"
         return texto.format(self.proveedor, self.marca)
     
          
@@ -62,8 +62,8 @@ class Producto(models.Model):
 
 
 class Producto_imagen(models.Model):
-    producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
-    imagen = models.ImageField(upload_to='fotos/productos',blank=True)
+    producto = models.ForeignKey(Producto, related_name="imagenes", on_delete=models.CASCADE)
+    imagen = models.ImageField(upload_to="uploads/",null=False,blank=True)
     
     def __str__(self):
         texto = "{0} ({1})"

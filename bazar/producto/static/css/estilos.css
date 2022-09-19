@@ -112,6 +112,11 @@ body{
     box-shadow: 2px var(--white);
     color: var(--white);
     font-size: 1.55rem;
+    
+}
+
+.div-botones .botones-sesion:hover{
+    background-color: #555;
 }
 
 @media (max-width: 800px) {
